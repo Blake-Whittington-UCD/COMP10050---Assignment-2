@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "input_output.h"
+#include "stack.h"
+
 
 int main() {
 
@@ -11,8 +13,10 @@ int main() {
 
     initialize_board(board);
 
+
     print_board(board);
 
+    userMove(&players[PLAYERS_NUM],  board);
 
     return 0;
 }

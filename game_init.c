@@ -17,8 +17,7 @@ int stack_Size(square s){
 void initialize_players(player players[PLAYERS_NUM]){
 
     // implement here the functionality to initialize the players
-    struct player player1;
-    struct player player2;
+
 
 
     printf("What is the name of Player 1?: \n");
