@@ -1,0 +1,3 @@
+C:/Users/whitt/CLionProjects/SoftwareEngineering-Project2/cmake-build-debug/CMakeFiles/SoftwareEngineering_Project2.dir
+C:/Users/whitt/CLionProjects/SoftwareEngineering-Project2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/whitt/CLionProjects/SoftwareEngineering-Project2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
