@@ -3,4 +3,4 @@ project(SoftwareEngineering_Project2 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(SoftwareEngineering_Project2 main.c game_init.c game_init.h input_output.c input_output.h stack.c stack.h)
+add_executable(SoftwareEngineering_Project2 main.c game_init.c game_init.h input_output.c input_output.h stack.c stack.h player_switch.c player_switch.h)
