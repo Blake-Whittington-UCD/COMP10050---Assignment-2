@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SoftwareEngineering_Project2.dir/game_init.c.obj"
   "CMakeFiles/SoftwareEngineering_Project2.dir/input_output.c.obj"
   "CMakeFiles/SoftwareEngineering_Project2.dir/main.c.obj"
+  "CMakeFiles/SoftwareEngineering_Project2.dir/player_switch.c.obj"
   "CMakeFiles/SoftwareEngineering_Project2.dir/stack.c.obj"
   "SoftwareEngineering_Project2.exe"
   "SoftwareEngineering_Project2.exe.manifest"

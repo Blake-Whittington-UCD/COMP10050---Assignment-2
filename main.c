@@ -1,6 +1,6 @@
+
 #include <stdio.h>
-#include "input_output.h"
-#include "stack.h"
+#include "player_switch.h"
 
 
 int main() {
@@ -13,10 +13,10 @@ int main() {
 
     initialize_board(board);
 
+    printf("Player 1 goes first!\n");
 
-    print_board(board);
+    winCon(players[PLAYERS_NUM] , board);
 
-    userMove(&players[PLAYERS_NUM],  board);
 
     return 0;
 }

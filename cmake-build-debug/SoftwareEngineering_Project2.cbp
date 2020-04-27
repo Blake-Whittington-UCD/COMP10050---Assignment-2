@@ -89,6 +89,12 @@
 		<Unit filename="C:/Users/whitt/CLionProjects/SoftwareEngineering-Project2/main.c">
 			<Option target="SoftwareEngineering_Project2"/>
 		</Unit>
+		<Unit filename="C:/Users/whitt/CLionProjects/SoftwareEngineering-Project2/player_switch.c">
+			<Option target="SoftwareEngineering_Project2"/>
+		</Unit>
+		<Unit filename="C:/Users/whitt/CLionProjects/SoftwareEngineering-Project2/player_switch.h">
+			<Option target="SoftwareEngineering_Project2"/>
+		</Unit>
 		<Unit filename="C:/Users/whitt/CLionProjects/SoftwareEngineering-Project2/stack.c">
 			<Option target="SoftwareEngineering_Project2"/>
 		</Unit>

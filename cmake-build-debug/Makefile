@@ -203,6 +203,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles\SoftwareEngineering_Project2.dir\build.make CMakeFiles/SoftwareEngineering_Project2.dir/main.c.s
 .PHONY : main.c.s
 
+player_switch.obj: player_switch.c.obj
+
+.PHONY : player_switch.obj
+
+# target to build an object file
+player_switch.c.obj:
+	$(MAKE) -f CMakeFiles\SoftwareEngineering_Project2.dir\build.make CMakeFiles/SoftwareEngineering_Project2.dir/player_switch.c.obj
+.PHONY : player_switch.c.obj
+
+player_switch.i: player_switch.c.i
+
+.PHONY : player_switch.i
+
+# target to preprocess a source file
+player_switch.c.i:
+	$(MAKE) -f CMakeFiles\SoftwareEngineering_Project2.dir\build.make CMakeFiles/SoftwareEngineering_Project2.dir/player_switch.c.i
+.PHONY : player_switch.c.i
+
+player_switch.s: player_switch.c.s
+
+.PHONY : player_switch.s
+
+# target to generate assembly for a file
+player_switch.c.s:
+	$(MAKE) -f CMakeFiles\SoftwareEngineering_Project2.dir\build.make CMakeFiles/SoftwareEngineering_Project2.dir/player_switch.c.s
+.PHONY : player_switch.c.s
+
 stack.obj: stack.c.obj
 
 .PHONY : stack.obj
@@ -248,6 +275,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... player_switch.obj
+	@echo ... player_switch.i
+	@echo ... player_switch.s
 	@echo ... stack.obj
 	@echo ... stack.i
 	@echo ... stack.s

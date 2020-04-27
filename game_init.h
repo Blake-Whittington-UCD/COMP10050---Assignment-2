@@ -7,8 +7,7 @@
 #define BOARD_SIZE 8
 #define PLAYERS_NUM 2
 
-struct player player1;
-struct player player2;
+
 
 //colors that a piece can have
 typedef enum color {

@@ -1,6 +1,11 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "game_init.h"
+
+
+player player1;
+player player2;
 
 int stack_Size(square s){
 
@@ -14,10 +19,7 @@ int stack_Size(square s){
     }
 }
 
-void initialize_players(player players[PLAYERS_NUM]){
-
-    // implement here the functionality to initialize the players
-
+void initialize_players(player players[PLAYERS_NUM]) {
 
 
     printf("What is the name of Player 1?: \n");
@@ -37,40 +39,47 @@ void initialize_players(player players[PLAYERS_NUM]){
 
     player1.captured_pieces = 0;
     player2.captured_pieces = 0;
-
 }
+
+
 
 //Set Invalid Squares (where it is not possible to place stacks)
-set_invalid(square * s){
-s->type = INVALID;
-s->stack = NULL;
-s->num_pieces = 0;
-}
+    set_invalid(square * s){
+
+        s->type = INVALID;
+        s->stack = NULL;
+        s->num_pieces = 0;
+    }
+
 
 //Set Empty Squares (with no pieces/stacks)
-set_empty(square * s){
-s->type = VALID;
-s->stack = NULL;
-s->num_pieces = 0;
-}
+    set_empty(square * s){
+
+        s->type = VALID;
+        s->stack = NULL;
+        s->num_pieces = 0;
+    }
 
 //Set squares  with a GREEN piece
-set_green(square * s){
-s->type = VALID;
-s->stack = (piece *) malloc (sizeof(piece));
-s->stack->p_color = GREEN;
-s->stack->next = NULL;
-s->num_pieces = 1;
-}
+    set_green(square * s){
+
+        s->type = VALID;
+        s->stack = (piece *) malloc(sizeof(piece));
+        s->stack->p_color = GREEN;
+        s->stack->next = NULL;
+        s->num_pieces = 1;
+    }
 
 //Set squares with a RED piece
-set_red(square * s){
-s->type = VALID;
-s->stack = (piece *) malloc (sizeof(piece));
-s->stack->p_color = RED;
-s->stack->next = NULL;
-s->num_pieces = 1;
-}
+    set_red(square * s){
+
+        s->type = VALID;
+        s->stack = (piece *) malloc(sizeof(piece));
+        s->stack->p_color = RED;
+        s->stack->next = NULL;
+        s->num_pieces = 1;
+    }
+
 
 //initializes the board
 void initialize_board(square board [BOARD_SIZE][BOARD_SIZE]){
@@ -101,7 +110,6 @@ void initialize_board(square board [BOARD_SIZE][BOARD_SIZE]){
 
 
     }
-
 
 }
 
