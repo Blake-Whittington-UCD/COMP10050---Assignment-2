@@ -8,7 +8,6 @@
  * Valid squares with a GREEN piece are printed as | G |
  * Valid squares with a RED piece are printed as | R | */
 
-
 void print_board(square board[BOARD_SIZE][BOARD_SIZE]){
     printf("****** The Board ******\n");
     for(int i = 0; i < BOARD_SIZE; i ++){
@@ -23,7 +22,6 @@ void print_board(square board[BOARD_SIZE][BOARD_SIZE]){
                     printf("| R ");
                     else
                         printf("|   ");
-
                 }
             }
             else

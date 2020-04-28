@@ -7,8 +7,6 @@
 #define BOARD_SIZE 8
 #define PLAYERS_NUM 2
 
-
-
 //colors that a piece can have
 typedef enum color {
     RED,
@@ -27,20 +25,14 @@ typedef enum square_type {
 typedef struct player{
     //the color associated with the player
     color player_color;
-    char name[20];
-    int adversary_pieces;
-    int own_pieces;
+    char name[20]; //The name associated with the player
+    int own_pieces_captured; //Stores the captured pieces of yourself and your enemy
     int captured_pieces;
 
-
-    /*
-     * A player should also be characterized by:
-     * name,
-     * number of adversary's pieces captured,
-     * number of own pieces kept.
-     *
-    */
 }player;
+
+player player1;
+player player2;
 
 // A piece
 typedef struct piece{
@@ -67,7 +59,7 @@ typedef struct square {
 }square;
 
 //Function to create the players
-void initialize_players(player players[PLAYERS_NUM]);
+void initialize_players();
 
 //Function to create the board
 void initialize_board(square board[BOARD_SIZE][BOARD_SIZE]);

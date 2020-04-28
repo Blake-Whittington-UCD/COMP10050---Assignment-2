@@ -3,45 +3,23 @@
 #include <stdlib.h>
 #include "game_init.h"
 
+void initialize_players() {
 
-player player1;
-player player2;
-
-int stack_Size(square s){
-
-    int y = 0;
-
-    struct piece *xPtr = (s).stack;
-
-    while(xPtr != NULL){
-        xPtr = (*xPtr).next;
-        y++;
-    }
-}
-
-void initialize_players(player players[PLAYERS_NUM]) {
-
-
-    printf("What is the name of Player 1?: \n");
+    printf("What is the name of Player 1?: \n"); //Stores the names of both players
     scanf("%s", player1.name);
-
 
     printf("What is the name of Player 2?: \n");
     scanf("%s", player2.name);
 
-
-    player1.player_color = RED;
+    player1.player_color = RED; //Sets each players colors
     player2.player_color = GREEN;
 
-
-    player1.own_pieces = 18;
-    player2.adversary_pieces = 18;
+    player1.own_pieces_captured = 0;
+    player2.own_pieces_captured = 0;
 
     player1.captured_pieces = 0;
     player2.captured_pieces = 0;
 }
-
-
 
 //Set Invalid Squares (where it is not possible to place stacks)
     set_invalid(square * s){
@@ -107,9 +85,6 @@ void initialize_board(square board [BOARD_SIZE][BOARD_SIZE]){
                 }
             }
         }
-
-
     }
-
 }
 

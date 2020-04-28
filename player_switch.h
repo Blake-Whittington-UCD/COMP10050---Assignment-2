@@ -6,4 +6,4 @@
 
 #include "stack.h"
 
-void winCon(struct player players, square board[BOARD_SIZE][BOARD_SIZE]);
+void winCon( square board[BOARD_SIZE][BOARD_SIZE]);
